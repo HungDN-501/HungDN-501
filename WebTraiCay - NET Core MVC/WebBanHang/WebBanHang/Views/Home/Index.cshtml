@@ -1,0 +1,39 @@
+﻿@{
+    // đặt giá trị cho thuộc tính "Title" trong ViewData
+    // ViewData được sử dụng để truyền dữ liệu từ controller đến view
+    ViewData["Title"] = "Home Page";
+    // Đặt View
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+@* add Pub X.PagedList.Mvc.Core*@
+@using X.PagedList.Mvc.Core;
+
+@*Tao Model*@
+@*@model List<TDanhMucSp>*@
+@model X.PagedList.IPagedList<TDanhMucSp>
+
+@*Tao RenderBody*@
+@foreach (var item in  Model)
+{
+    // Goi den View "PartialSanPham.cshtml" qua PartialAsync(tenView,Model)
+    @await Html.PartialAsync("PartialSanPham", item);
+}
+
+@* ------- Phân trang ------- *@
+<div class="product__pagination">
+    @*<a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#"><i class="fa fa-long-arrow-right"></i></a>*@
+
+    @*Html.PagedListPager : là một helper trong ASP.NET MVC được cung cấp bởi thư viện X.PagedList.Mvc.Core để tạo ra các liên kết phân trang
+    Model : Dữ Liệu
+    Url.Action("Index", new {page = indexPage}) : gọi đến hàm Index của Controller và truyền tham số*@
+    @Html.PagedListPager(Model, indexPage => Url.Action("Index", new {page = indexPage}))
+</div>
+
+@*<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@

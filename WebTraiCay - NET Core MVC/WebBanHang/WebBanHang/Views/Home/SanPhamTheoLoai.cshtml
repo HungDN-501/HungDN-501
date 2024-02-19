@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "SanPhamTheoLoai";
+    Layout = "~/Views/Shared/_LayoutOgani.cshtml";
+}
+
+@* add Pub X.PagedList.Mvc.Core*@
+@using X.PagedList.Mvc.Core;
+
+@*Tao Model*@
+@*@model List<TDanhMucSp>*@
+@model X.PagedList.IPagedList<TDanhMucSp>
+
+@*Tao RenderBody*@
+@foreach (var item in Model)
+{
+    // Goi den View "PartialSanPham.cshtml" qua PartialAsync(tenView,Model)
+    @await Html.PartialAsync("PartialSanPham", item);
+}
+
+@* ------- Phân trang ------- *@
+<div class="product__pagination">
+    @*Html.PagedListPager : là một helper trong ASP.NET MVC được cung cấp bởi thư viện X.PagedList.Mvc.Core để tạo ra các liên kết phân trang
+    Model : Dữ Liệu
+    Url.Action("SanPhamTheoLoai", new {page = indexPage}) : gọi đến hàm SanPhamTheoLoai của Controller và truyền tham số*@
+    @Html.PagedListPager(Model, indexPage => Url.Action("SanPhamTheoLoai", new {page = indexPage, maloai = ViewBag.maloai}))
+</div>
+

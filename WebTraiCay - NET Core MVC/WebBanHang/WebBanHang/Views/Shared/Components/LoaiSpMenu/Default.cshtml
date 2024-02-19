@@ -1,0 +1,42 @@
+﻿@model IEnumerable<TLoaiSp>
+
+<div class="col-lg-3">
+    <div class="hero__categories">
+        <div class="hero__categories__all">
+            <i class="fa fa-bars"></i>
+            <span>All departments</span>
+        </div>
+        <ul>
+            @foreach(var item in Model)
+            {
+                // cấu hình Controller và Action, Route (theo cách ajax dùng API)
+                @*var getUrl = "https://localhost:7020/api/productapi/" + item.MaLoai;
+                <li><a style="cursor:pointer" onclick="showProductByCategory('@getUrl')">@item.Loai</a></li>*@
+
+                // cấu hình Controller và Action, Route (cách ko theo ajax dùng API)
+                <li><a asp-controller="home" asp-action="sanphamtheoloai" asp-route-maloai="@item.MaLoai">@item.Loai</a></li>
+            }
+        </ul>
+    </div>
+</div>
+
+@*lấy API bằng AJax*@
+<script>
+    function showProductByCategory(getUrl){
+        var str='';
+        $.ajax({
+            type: 'GET',
+            url: getUrl,
+            dataType: 'json',
+            success: function (data) {
+                $.each(data, function (key, val){
+                    str += '<p>' + val.tenSp + '</p>'
+                });
+                $('#displayProducts').html(str);
+            },
+            Error: function (xhr) {
+                alert(xhr.responseText)
+            }
+        });
+    }
+</script>
