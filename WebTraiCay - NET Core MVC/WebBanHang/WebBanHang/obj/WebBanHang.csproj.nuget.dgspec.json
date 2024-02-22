@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NET tự học\\Website ban hang - ASP NET MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj": {}
+    "D:\\Git\\self-study-.NET\\WebTraiCay - NET Core MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj": {}
   },
   "projects": {
-    "D:\\NET tự học\\Website ban hang - ASP NET MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj": {
+    "D:\\Git\\self-study-.NET\\WebTraiCay - NET Core MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NET tự học\\Website ban hang - ASP NET MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
+        "projectUniqueName": "D:\\Git\\self-study-.NET\\WebTraiCay - NET Core MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
         "projectName": "WebBanHang",
-        "projectPath": "D:\\NET tự học\\Website ban hang - ASP NET MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
+        "projectPath": "D:\\Git\\self-study-.NET\\WebTraiCay - NET Core MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
         "packagesPath": "C:\\Users\\dhung\\.nuget\\packages\\",
-        "outputPath": "D:\\NET tự học\\Website ban hang - ASP NET MVC\\WebBanHang\\WebBanHang\\obj\\",
+        "outputPath": "D:\\Git\\self-study-.NET\\WebTraiCay - NET Core MVC\\WebBanHang\\WebBanHang\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dhung\\AppData\\Roaming\\NuGet\\NuGet.Config",

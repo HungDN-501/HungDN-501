@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UiGSIcSeNOeY5xB3eYDFD7RBmUondWebe08JG8gGVYW79++ySnd/Tm6Cpp7dmVvRd7x1seLalSqlTsnbWkzF/w==",
+  "dgSpecHash": "boAA8cImGIWAmFEij/LISoT7JHev5TQpZ5A33fnnIbQa070WcxW1RDDmO/38nt6hYa2CPwPF4cWchnUanQqd+Q==",
   "success": true,
-  "projectFilePath": "D:\\NET tự học\\Website ban hang - ASP NET MVC\\ShopWeb\\ShopWeb\\ShopWeb.csproj",
+  "projectFilePath": "D:\\Git\\self-study-.NET\\ShopWeb - NET Core MVC\\ShopWeb\\ShopWeb\\ShopWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dhung\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\dhung\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

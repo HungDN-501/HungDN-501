@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+f28WIgxYlrcQWE46/Q/SCgd+atH8ZTtU+xljFi4UK7ZjbXUKtUKfcnBxNgUNNKbL0F8xrWDVXpJODXAkKIzvw==",
+  "dgSpecHash": "8HIHo8K1J7vfi3VPpXPG/79nWHASxa6Ypyj9emzQeL9q3nGiuEEIKCNxNCkFmmOF3T4ZRznozRVcXAjVEYx5Ww==",
   "success": true,
-  "projectFilePath": "D:\\NET tự học\\Website ban hang - ASP NET MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
+  "projectFilePath": "D:\\Git\\self-study-.NET\\WebTraiCay - NET Core MVC\\WebBanHang\\WebBanHang\\WebBanHang.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dhung\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\dhung\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
